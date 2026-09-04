@@ -1,0 +1,260 @@
+<title>Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Libre+Franklin:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --baize:#1f5c3e;
+    --baize-dim:#e9f1ec;
+    --cream:#f6f3ea;
+    --ink:#211f1a;
+    --ink-soft:#5b5748;
+    --chalk:#c9a13b;
+    --rule:#d8d2c2;
+    --card:#ffffff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --baize:#4fae7f;
+      --baize-dim:#173226;
+      --cream:#17150f;
+      --ink:#efe9da;
+      --ink-soft:#b8b09a;
+      --chalk:#e0b94f;
+      --rule:#3a3527;
+      --card:#211f17;
+    }
+  }
+  :root[data-theme="dark"]{
+    --baize:#4fae7f;
+    --baize-dim:#173226;
+    --cream:#17150f;
+    --ink:#efe9da;
+    --ink-soft:#b8b09a;
+    --chalk:#e0b94f;
+    --rule:#3a3527;
+    --card:#211f17;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:56px 24px 80px;
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--baize);
+    font-weight:600;
+    margin-bottom:14px;
+  }
+  .eyebrow .dot{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--chalk);
+    flex:none;
+  }
+  h1{
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-weight:600;
+    font-size:clamp(30px,5vw,42px);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+    margin:0 0 8px;
+    color:var(--ink);
+  }
+  .sub{
+    color:var(--ink-soft);
+    font-size:16px;
+    margin:0 0 8px;
+    max-width:58ch;
+  }
+  .updated{
+    color:var(--ink-soft);
+    font-size:13px;
+    margin:0 0 40px;
+  }
+  .rule{
+    height:1px;
+    background:var(--rule);
+    border:none;
+    margin:36px 0;
+  }
+  h2{
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-weight:600;
+    font-size:19px;
+    letter-spacing:0.01em;
+    margin:0 0 12px;
+    color:var(--ink);
+  }
+  p{
+    margin:0 0 14px;
+    color:var(--ink);
+    max-width:64ch;
+  }
+  p.muted{ color:var(--ink-soft); font-size:15px; }
+  ul{
+    margin:0 0 14px;
+    padding-left:20px;
+    max-width:60ch;
+  }
+  li{ margin-bottom:8px; }
+  .card{
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:24px 26px;
+    margin:28px 0;
+  }
+  .card h2{ margin-bottom:6px; }
+  .email-link{
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-weight:600;
+    font-size:18px;
+    letter-spacing:0.01em;
+    color:var(--baize);
+    text-decoration:none;
+    border-bottom:2px solid var(--chalk);
+    padding-bottom:2px;
+  }
+  .email-link:hover{ opacity:0.85; }
+  .email-link:focus-visible{
+    outline:2px solid var(--baize);
+    outline-offset:4px;
+    border-radius:2px;
+  }
+  .table{
+    width:100%;
+    border-collapse:collapse;
+    margin:8px 0 4px;
+    font-size:14.5px;
+  }
+  .table th{
+    text-align:left;
+    font-family:'Oswald','Segoe UI',sans-serif;
+    font-weight:600;
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    padding:0 12px 8px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .table td{
+    padding:10px 12px 10px 0;
+    border-bottom:1px solid var(--rule);
+    vertical-align:top;
+  }
+  .table tr:last-child td{ border-bottom:none; }
+  .pill{
+    display:inline-block;
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    padding:2px 8px;
+    border-radius:999px;
+    background:var(--baize-dim);
+    color:var(--baize);
+    white-space:nowrap;
+  }
+  nav.crumbs{
+    font-size:13px;
+    margin-bottom:28px;
+  }
+  nav.crumbs a{
+    color:var(--baize);
+    text-decoration:none;
+    border-bottom:1px solid var(--chalk);
+  }
+  footer{
+    margin-top:48px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+</style>
+
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>Wigan Pool League &middot; App</div>
+  <h1>Privacy Policy</h1>
+  <p class="sub">What we collect when you use the Wigan Pool League app, why, and who else sees it.</p>
+  <p class="updated">Last updated 4 September 2026</p>
+
+  <nav class="crumbs"><a href="./">&larr; Data deletion requests</a></nav>
+
+  <h2>What we collect</h2>
+  <p>Stored data is limited to your player name, email address and phone number, plus a device token if you enable push notifications.</p>
+  <table class="table">
+    <tr><th>Data</th><th>Visible to</th></tr>
+    <tr><td>Player name</td><td><span class="pill">Other players</span></td></tr>
+    <tr><td>Phone number</td><td><span class="pill">Other players</span></td></tr>
+    <tr><td>Email address</td><td><span class="pill">Account holder, captain &amp; vice-captain</span></td></tr>
+    <tr><td>Push notification token</td><td><span class="pill">Not visible to players</span></td></tr>
+  </table>
+  <p class="muted">Your phone number is shown to other players so they can arrange matches with you. Email addresses are only used for account access and league administration.</p>
+
+  <hr class="rule">
+
+  <h2>Why we collect it</h2>
+  <ul>
+    <li>To identify you within your team and league, and let opponents arrange fixtures.</li>
+    <li>To let you sign in and recover your account.</li>
+    <li>To send you fixture reminders and league notices, if you've enabled notifications.</li>
+  </ul>
+  <p>Once an account is set up, your email address cannot be changed without administrative consent, which may require deleting and recreating the account.</p>
+
+  <hr class="rule">
+
+  <h2>Who processes your data</h2>
+  <p>We don't sell or share your data with any third party for their own use. To run the app, we rely on a small number of infrastructure providers who process data strictly on our behalf, under their own security and data-protection terms:</p>
+  <table class="table">
+    <tr><th>Provider</th><th>Purpose</th></tr>
+    <tr><td>Supabase</td><td>Database, authentication &amp; account storage</td></tr>
+    <tr><td>Expo (via Apple/Google push services)</td><td>Delivering push notifications to your device</td></tr>
+  </table>
+  <p class="muted">These providers cannot use your data for advertising or any purpose beyond operating the app on our behalf.</p>
+
+  <hr class="rule">
+
+  <h2>How long we keep it</h2>
+  <p>Data is retained for the duration of your participation in the league and for one further season afterwards, then deleted. You can ask us to delete it sooner &mdash; see our <a class="email-link" style="font-size:15px;" href="./">data deletion page</a>.</p>
+
+  <hr class="rule">
+
+  <h2>Security</h2>
+  <p>All data is encrypted in transit (HTTPS/TLS) between the app and our database provider. Access to player data within the app is restricted by your role &mdash; player, captain, vice-captain or league administrator.</p>
+
+  <hr class="rule">
+
+  <h2>Children</h2>
+  <p>The app is intended for players registered with Wigan Pool League and is not directed at children under 13. We don't knowingly collect data from children under 13.</p>
+
+  <hr class="rule">
+
+  <h2>Your rights</h2>
+  <p>You can ask us at any time to see a copy of your data, correct it, or remove it. You can also withdraw consent for storing your phone number directly from the app's Privacy screen, which removes it immediately.</p>
+  <p>Contact us at:</p>
+  <p><a class="email-link" href="mailto:wiganpool@hotmail.com">wiganpool@hotmail.com</a></p>
+
+  <hr class="rule">
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "last updated" date above will change and, where the change is significant, we'll let players know in the app.</p>
+
+  <footer>
+    Data is controlled by Wigan Pool League. Contact: <a class="email-link" style="font-size:13px;border-bottom-width:1px;" href="mailto:wiganpool@hotmail.com">wiganpool@hotmail.com</a>
+  </footer>
+</div>

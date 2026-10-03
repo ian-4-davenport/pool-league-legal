@@ -1,0 +1,255 @@
+<title>App Support</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Libre+Franklin:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --baize:#1f5c3e;
+    --baize-dim:#e9f1ec;
+    --cream:#f6f3ea;
+    --ink:#211f1a;
+    --ink-soft:#5b5748;
+    --chalk:#c9a13b;
+    --rule:#d8d2c2;
+    --card:#ffffff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --baize:#4fae7f;
+      --baize-dim:#173226;
+      --cream:#17150f;
+      --ink:#efe9da;
+      --ink-soft:#b8b09a;
+      --chalk:#e0b94f;
+      --rule:#3a3527;
+      --card:#211f17;
+    }
+  }
+  :root[data-theme="dark"]{
+    --baize:#4fae7f;
+    --baize-dim:#173226;
+    --cream:#17150f;
+    --ink:#efe9da;
+    --ink-soft:#b8b09a;
+    --chalk:#e0b94f;
+    --rule:#3a3527;
+    --card:#211f17;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:640px;
+    margin:0 auto;
+    padding:56px 24px 80px;
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--baize);
+    font-weight:600;
+    margin-bottom:14px;
+  }
+  .eyebrow .dot{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--chalk);
+    flex:none;
+  }
+  h1{
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-weight:600;
+    font-size:clamp(30px,5vw,42px);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+    margin:0 0 8px;
+    color:var(--ink);
+  }
+  .sub{
+    color:var(--ink-soft);
+    font-size:16px;
+    margin:0 0 40px;
+    max-width:52ch;
+  }
+  .rule{
+    height:1px;
+    background:var(--rule);
+    border:none;
+    margin:36px 0;
+  }
+  h2{
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-weight:600;
+    font-size:19px;
+    letter-spacing:0.01em;
+    margin:0 0 12px;
+    color:var(--ink);
+  }
+  p{
+    margin:0 0 14px;
+    color:var(--ink);
+    max-width:60ch;
+  }
+  p.muted{ color:var(--ink-soft); font-size:15px; }
+  ul{
+    margin:0 0 14px;
+    padding-left:20px;
+  }
+  li{ margin-bottom:8px; max-width:56ch; }
+  .card{
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:24px 26px;
+    margin:28px 0;
+  }
+  .card h2{ margin-bottom:6px; }
+  .email-row{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:16px;
+  }
+  .email-link{
+    font-family:'Oswald', 'Segoe UI', sans-serif;
+    font-weight:600;
+    font-size:18px;
+    letter-spacing:0.01em;
+    color:var(--baize);
+    text-decoration:none;
+    border-bottom:2px solid var(--chalk);
+    padding-bottom:2px;
+  }
+  .email-link:hover{ opacity:0.85; }
+  .email-link:focus-visible{
+    outline:2px solid var(--baize);
+    outline-offset:4px;
+    border-radius:2px;
+  }
+  .copy-hint{
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  .table{
+    width:100%;
+    border-collapse:collapse;
+    margin:8px 0 4px;
+    font-size:14.5px;
+  }
+  .table th{
+    text-align:left;
+    font-family:'Oswald','Segoe UI',sans-serif;
+    font-weight:600;
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    padding:0 12px 8px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .table td{
+    padding:10px 12px 10px 0;
+    border-bottom:1px solid var(--rule);
+    vertical-align:top;
+  }
+  .table tr:last-child td{ border-bottom:none; }
+  .pill{
+    display:inline-block;
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    padding:2px 8px;
+    border-radius:999px;
+    background:var(--baize-dim);
+    color:var(--baize);
+  }
+  footer{
+    margin-top:48px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  details{
+    border-bottom:1px solid var(--rule);
+    padding:14px 0;
+  }
+  details:first-of-type{ border-top:1px solid var(--rule); }
+  summary{
+    cursor:pointer;
+    font-weight:600;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+  }
+  summary::-webkit-details-marker{ display:none; }
+  summary::after{ content:"+"; color:var(--baize); font-family:'Oswald',sans-serif; font-size:20px; line-height:1; }
+  details[open] summary::after{ content:"\2212"; }
+  summary:focus-visible{ outline:2px solid var(--baize); outline-offset:4px; border-radius:2px; }
+  details p{ margin:10px 0 0; color:var(--ink-soft); }
+  .links a{ color:var(--baize); }
+</style>
+
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>Wigan Pool League &middot; App</div>
+  <h1>App support</h1>
+  <p class="sub">Help with the Wigan Pool League app &mdash; fixtures, results, standings and match-night scorecards for the league.</p>
+
+  <div class="card">
+    <h2>Contact us</h2>
+    <p class="muted">Having a problem, spotted a wrong result, or have a suggestion? Email the league and we'll get back to you.</p>
+    <div class="email-row">
+      <a class="email-link" href="mailto:wiganpool@hotmail.com?subject=App%20support">wiganpool@hotmail.com</a>
+    </div>
+    <p class="copy-hint" style="margin-top:10px;">It helps to include your name, team, the device you're using (iPhone / Android) and a screenshot if something looks wrong.</p>
+  </div>
+
+  <hr class="rule">
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>I can't log in or have forgotten my password</summary>
+    <p>Check you're using the email address you registered with. If you still can't get in, email us from that address and we'll help you regain access.</p>
+  </details>
+
+  <details>
+    <summary>A match result or score is wrong</summary>
+    <p>Results are entered by team captains and the league committee. Speak to your captain first; if it still needs correcting, email us with the fixture date, the teams involved and what should be changed.</p>
+  </details>
+
+  <details>
+    <summary>I'm not on my team's player list</summary>
+    <p>Team captains manage their squad entries. Ask your captain to add you, or contact the league if your captain can't.</p>
+  </details>
+
+  <details>
+    <summary>I'm not getting notifications</summary>
+    <p>Make sure notifications are allowed for the app in your phone's settings, and check your notification preferences on the Profile screen inside the app.</p>
+  </details>
+
+  <details>
+    <summary>The app isn't showing the latest fixtures or results</summary>
+    <p>Pull down to refresh, or close and reopen the app. If it still looks out of date, make sure you have the latest version from the App Store or Google Play.</p>
+  </details>
+
+  <hr class="rule">
+
+  <h2>Your data</h2>
+  <p class="links">Read our <a href="privacy.html">privacy policy</a> to see what we collect and why. You can ask us to delete your account and personal data at any time &mdash; see <a href="./">how to request data deletion</a>.</p>
+
+  <footer>
+    Wigan Pool League app &middot; Support: <a class="email-link" style="font-size:13px;border-bottom-width:1px;" href="mailto:wiganpool@hotmail.com">wiganpool@hotmail.com</a>
+  </footer>
+</div>
